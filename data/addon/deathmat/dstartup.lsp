@@ -61,7 +61,7 @@
 ;	     (print (list 'setq 'username
 ;			  (concatenate 'string '(#\") input '(#\"))))))
 
-(local_load "config/username.lsp")
+(load "config/username.lsp")
 (set_login username)
 
 
@@ -102,7 +102,7 @@
 (setq keep_backup T)                  ;; determines if Save
 (setq load_warn nil)
 
-(local_load "gamma.lsp")              ;; load gamma correction values if they have been saved
+(load "gamma.lsp")              ;; load gamma correction values if they have been saved
 
 (if (not (load "hardness.lsp"))       ;; load hardness, if no file set to hard
     (setf difficulty        'hard))

@@ -2342,7 +2342,7 @@ LObject *LSysFunction::EvalFunction(LList *arg_list)
         if (fun_number == SYS_FUNC_LOCAL_LOAD)
         {
             // A special test for gamma.lsp
-            if (strcmp(st, "gamma.lsp") == 0)
+            /*if (strcmp(st, "gamma.lsp") == 0)
             {
                 char *gammapath;
                 gammapath = (char *)malloc(strlen(get_save_filename_prefix()) + 9 + 1);
@@ -2350,7 +2350,7 @@ LObject *LSysFunction::EvalFunction(LList *arg_list)
                 fp = new jFILE(gammapath, "rb");
                 free(gammapath);
             }
-            else
+            else*/
                 fp = new jFILE(st, "rb");
         }
         else

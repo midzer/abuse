@@ -87,8 +87,8 @@ target_link_libraries(abuse lisp)
 target_link_libraries(abuse sdlport)
 target_link_libraries(abuse imlib)
 target_link_libraries(abuse net)
-target_link_libraries(abuse SDL2::SDL2)
-target_link_libraries(abuse SDL2_mixer::SDL2_mixer)
+#target_link_libraries(abuse SDL2::SDL2)
+#target_link_libraries(abuse SDL2_mixer::SDL2_mixer)
 if(OPENGL_FOUND)
     target_link_libraries(abuse ${OPENGL_LIBRARIES})
 endif(OPENGL_FOUND)
@@ -107,8 +107,8 @@ include_directories(
     ${abuse_SOURCE_DIR}/src/lisp
     ${abuse_SOURCE_DIR}/src/imlib
     ${abuse_SOURCE_DIR}/src/net
-    ${SDL2_INCLUDE_DIR}
-    ${SDL2_MIXER_INCLUDE_DIR}
+    #${SDL2_INCLUDE_DIR}
+    #${SDL2_MIXER_INCLUDE_DIR}
 )
 if(WIN32)
     # Under Windows, throw them into the root

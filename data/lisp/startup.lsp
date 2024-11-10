@@ -14,7 +14,7 @@
 
 (load "demo.lsp")
 
-(local_load "gamma.lsp")              ;; load gamma correction values if they have been saved
+(load "gamma.lsp")              ;; load gamma correction values if they have been saved
 
 (if (not (load "hardness.lsp"))       ;; load hardness, if no file set to hard
     (setf difficulty        'hard))

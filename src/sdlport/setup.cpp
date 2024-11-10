@@ -353,7 +353,7 @@ void parseCommandLine( int argc, char **argv )
 void setup( int argc, char **argv )
 {
     // Initialize default settings
-    flags.fullscreen         = 1;    // Start fullscreen (actually windowed-fullscreen now)
+    flags.fullscreen         = 0;    // Start fullscreen (actually windowed-fullscreen now)
     flags.software           = 0;    // Don't use software renderer by default
     flags.mono               = 0;    // Enable stereo sound
     flags.nosound            = 0;    // Enable sound
